@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48858A9C-A0FC-4722-81E6-39A26C262EA0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AyabellesPOS</RootNamespace>
+    <AssemblyName>AyabellesPOS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewPrice.Designer.cs">
+      <DependentUpon>AddNewPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminControl.Designer.cs">
+      <DependentUpon>adminControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminLogin.Designer.cs">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="guestControl.Designer.cs">
+      <DependentUpon>guestControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guestLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="guestLogin.Designer.cs">
+      <DependentUpon>guestLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminView.Designer.cs">
+      <DependentUpon>AdminView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuestView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuestView.Designer.cs">
+      <DependentUpon>GuestView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="loginSection.Designer.cs">
+      <DependentUpon>loginSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewPrice.resx">
+      <DependentUpon>AddNewPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminControl.resx">
+      <DependentUpon>adminControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminLogin.resx">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guestControl.resx">
+      <DependentUpon>guestControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guestLogin.resx">
+      <DependentUpon>guestLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminView.resx">
+      <DependentUpon>AdminView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestView.resx">
+      <DependentUpon>GuestView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginSection.resx">
+      <DependentUpon>loginSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.food.silverware.cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.food.silverware.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.facebook.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.edit.png" />
+    <None Include="Resources\appbar.graph.line.up.png" />
+    <None Include="Resources\appbar.edit.add.png" />
+    <None Include="Resources\appbar.edit.minus.png" />
+    <None Include="Resources\appbar.page.edit.png" />
+    <None Include="Resources\appbar.close.white.png" />
+    <Content Include="Resources\appbar.user.png" />
+    <Content Include="Resources\appbar.user.tie.png" />
+    <None Include="Resources\appbar.user.tie1.png" />
+    <None Include="Resources\appbar.user1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
